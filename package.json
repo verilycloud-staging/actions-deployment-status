@@ -1,0 +1,36 @@
+{
+  "name": "deployment-status",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GitHub action to update deployment status",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "pack": "./node_modules/.bin/ncc build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/actions/javascript-template.git"
+  },
+  "keywords": [
+    "actions",
+    "node",
+    "setup"
+  ],
+  "author": "chrnorm",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.0.0",
+    "@actions/github": "^1.1.0",
+    "@zeit/ncc": "^0.22.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.4",
+    "jest": "^24.8.0",
+    "jest-circus": "^24.7.1",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.1"
+  }
+}
